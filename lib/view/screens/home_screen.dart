@@ -4,7 +4,6 @@ import 'package:expanse_tracker/models/expense_model.dart';
 import 'package:expanse_tracker/view/widgets/expense_widget.dart';
 import 'package:expanse_tracker/view/widgets/pie_chart.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:flutter_switch/flutter_switch.dart';
 import 'package:gap/gap.dart';
@@ -208,56 +207,23 @@ class HomeScreen extends StatelessWidget {
                                           return Padding(
                                             padding: const EdgeInsets.symmetric(
                                                 vertical: 7),
-                                            child: Slidable(
-                                              endActionPane: ActionPane(
-                                                  motion: const ScrollMotion(),
-                                                  children: [
-                                                    SlidableAction(
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                              15),
-                                                      onPressed: (e) {
-                                                        provider.deleteExpense(
-                                                            expense.uid);
-                                                      },
-                                                      backgroundColor:
-                                                          const Color(
-                                                              0xFFFE4A49),
-                                                      foregroundColor:
-                                                          Colors.white,
-                                                      icon: Icons.delete,
-                                                      label: 'Delete',
-                                                    ),
-                                                    SlidableAction(
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                              15),
-                                                      onPressed: (e) {
-                                                        context.go(
-                                                            '/home/editExpense',
-                                                            extra: {
-                                                              'edit': expense
-                                                            });
-                                                      },
-                                                      backgroundColor:
-                                                          Theme.of(context)
-                                                              .primaryColor,
-                                                      foregroundColor:
-                                                          Colors.white,
-                                                      icon: Icons.edit,
-                                                      label: 'Edit',
-                                                    ),
-                                                  ]),
-                                              key:
-                                                  ValueKey<String>(expense.uid),
-                                              child: ExpenseWidget(
-                                                amount: expenses[idx].amount,
-                                                category:
-                                                    expenses[idx].category,
-                                                description:
-                                                    expenses[idx].description,
-                                                title: expenses[idx].title,
-                                              ),
+                                            child: ExpenseWidget(
+                                              slideKey: ValueKey<String>(expense.uid),
+                                              delete: () {
+                                                provider.deleteExpense(
+                                                    expense.uid);
+                                              },
+                                              edit: () {
+                                                context.go(
+                                                    '/home/editExpense',
+                                                    extra: {'edit': expense});
+                                              },
+                                              amount: expenses[idx].amount,
+                                              category:
+                                                  expenses[idx].category,
+                                              description:
+                                                  expenses[idx].description,
+                                              title: expenses[idx].title,
                                             ),
                                           );
                                         },

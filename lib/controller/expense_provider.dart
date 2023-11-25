@@ -152,7 +152,7 @@ class ExpenseProvider extends ChangeNotifier {
 
       SnackbarService.showSnackbar('Updated Successfully');
       fetchTotal();
-      router.go('/home');
+      router.pop();
       notifyListeners();
     }
   }
