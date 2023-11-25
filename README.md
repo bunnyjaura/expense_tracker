@@ -1,16 +1,13 @@
-# expanse_tracker
+# Expense Tracker
 
-A new Flutter project.
+A simple expense tracking application made in Flutter
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Introducing our Flutter-driven Expense Tracker, a fusion of elegance and functionality. With its dual light and dark theme options, this app offers a seamless user experience.
 
-A few resources to get you started if this is your first Flutter project:
+![image](https://github.com/bunnyjaura/expense_tracker/assets/65805179/d037ae38-becd-4a71-975e-e881460debcd)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![image](https://github.com/bunnyjaura/expense_tracker/assets/65805179/3b4f480a-63bc-4089-a5a7-0384b322fde5)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
