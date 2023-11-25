@@ -43,7 +43,7 @@ class ExpenseWidget extends StatelessWidget {
                           : category == 'Housing'
                               ? 'assets/svg/housing.svg'
                               : category == 'Healthcare'
-                                  ? 'assets/svg/healthcare.svg'
+                                  ? 'assets/svg/medicine.svg'
                                   : 'assets/svg/entertainment.svg',
               colorFilter:
                   const ColorFilter.mode(Colors.white, BlendMode.srcIn),

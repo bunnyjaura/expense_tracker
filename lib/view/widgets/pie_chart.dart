@@ -40,7 +40,8 @@ class RadialPieChart extends StatelessWidget {
             labelPosition: ChartDataLabelPosition.outside,
             connectorLineSettings: ConnectorLineSettings(
               type: ConnectorType.curve,
-              length: '25%',
+              length: '30%',
+              
             ),
           ),
         ),

@@ -11,7 +11,6 @@ class SplashScreen extends HookWidget {
     var provider = Provider.of<ExpenseProvider>(context);
     useEffect(() {
       provider.navigateToHome();
-  provider.fetchData();
       return null;
     }, []);
     return Scaffold(

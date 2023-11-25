@@ -4,7 +4,6 @@ import 'package:expanse_tracker/models/expense_model.dart';
 import 'package:expanse_tracker/view/widgets/expense_widget.dart';
 import 'package:expanse_tracker/view/widgets/pie_chart.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:flutter_switch/flutter_switch.dart';
@@ -12,18 +11,13 @@ import 'package:gap/gap.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 
-class HomeScreen extends HookWidget {
+class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     var provider = Provider.of<ExpenseProvider>(context);
     var theme = Provider.of<ThemeProvider>(context);
-    useEffect(() {
-      // provider.fetchData();
-      // provider.fetchTotal();
-      return null;
-    }, []);
     return Scaffold(
       appBar: AppBar(
         title: const Text('Expense Tracker'),
@@ -71,7 +65,6 @@ class HomeScreen extends HookWidget {
       ),
       body: SafeArea(
         child: SingleChildScrollView(
-          
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
             child: Column(
@@ -90,9 +83,9 @@ class HomeScreen extends HookWidget {
                 ),
                 provider.data.isEmpty
                     ? SizedBox(
-                      height: 400,
-                      // color: Colors.amber,
-                      child: Column(
+                        height: 400,
+                        // color: Colors.amber,
+                        child: Column(
                           children: [
                             const Gap(60),
                             CircleAvatar(
@@ -115,7 +108,7 @@ class HomeScreen extends HookWidget {
                             )
                           ],
                         ),
-                    )
+                      )
                     : RadialPieChart(
                         expenseDataList: provider.data,
                       ),
@@ -158,7 +151,7 @@ class HomeScreen extends HookWidget {
                     ? Container()
                     : ListView.separated(
                         shrinkWrap: true,
-                        itemCount: 2, 
+                        itemCount: 2,
                         physics: const NeverScrollableScrollPhysics(),
                         separatorBuilder: (BuildContext context, int index) =>
                             const Divider(),
@@ -255,7 +248,8 @@ class HomeScreen extends HookWidget {
                                                       label: 'Edit',
                                                     ),
                                                   ]),
-                                              key: ValueKey<String>(expense.uid),
+                                              key:
+                                                  ValueKey<String>(expense.uid),
                                               child: ExpenseWidget(
                                                 amount: expenses[idx].amount,
                                                 category:

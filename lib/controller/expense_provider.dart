@@ -10,6 +10,7 @@ import 'package:uuid/uuid.dart';
 
 class ExpenseProvider extends ChangeNotifier {
   navigateToHome() {
+    fetchData();
     Timer(
         const Duration(
           seconds: 3,

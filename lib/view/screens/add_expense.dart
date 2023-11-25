@@ -10,7 +10,6 @@ import 'package:provider/provider.dart';
 
 class AddExpense extends HookWidget {
   final ExpenseData? edit;
-
   const AddExpense({Key? key, this.edit}) : super(key: key);
 
   @override
