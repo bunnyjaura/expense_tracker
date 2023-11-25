@@ -6,6 +6,8 @@ A simple expense tracking application made in Flutter
 
 Introducing our Flutter-driven Expense Tracker, a fusion of elegance and functionality. With its dual light and dark theme options, this app offers a seamless user experience.
 
+Powered by provider for state management, go_router for navigation, flutter_hooks for widgets, syncfusion_flutter_charts for data visuals, sqflite for local data, and flutter_slidable for UI interaction, this app offers a seamless and dynamic user journey.
+
 
 <img width="494" alt="Screenshot 2023-11-25 at 9 12 33 PM" src="https://github.com/bunnyjaura/expense_tracker/assets/65805179/73e5a1ac-2f6e-464c-9411-a9d0849c0700">
 
