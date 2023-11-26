@@ -152,5 +152,4 @@ class DatabaseHelper {
       return null;
     }
   }
-
 }

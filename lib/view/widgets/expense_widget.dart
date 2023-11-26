@@ -61,22 +61,6 @@ class ExpenseWidget extends StatelessWidget {
             ),
           ),
         ),
-        // SlidableAction(
-        //   borderRadius: BorderRadius.circular(15),
-        //   onPressed: delete,
-        //   backgroundColor:  const Color(0xFFFE4A49),
-        //   foregroundColor: Colors.white,
-        //   icon: Icons.delete,
-        //   label: 'Delete',
-        // ),
-        // SlidableAction(
-        //   borderRadius: BorderRadius.circular(15),
-        //   onPressed: edit,
-        //   backgroundColor: Theme.of(context).primaryColor,
-        //   foregroundColor: Colors.white,
-        //   icon: Icons.edit,
-        //   label: 'Edit',
-        // ),
       ]),
       child: Container(
         width: MediaQuery.of(context).size.width,
