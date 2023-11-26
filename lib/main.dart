@@ -5,7 +5,10 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MultiProvider(providers: [
+    ChangeNotifierProvider(create: (context) => ExpenseProvider()),
+    ChangeNotifierProvider(create: (context) => ThemeProvider()),
+  ], child: const MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -13,21 +16,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MultiProvider(
-      providers: [
-        ChangeNotifierProvider(create: (context) => ExpenseProvider()),
-        ChangeNotifierProvider(create: (context) => ThemeProvider()),
-      ],
-      child: Consumer<ThemeProvider>(
-        builder: (context, themeProvider, _) {
-          return MaterialApp.router(
-            debugShowCheckedModeBanner: false,
-            title: 'Expense Tracker',
-            theme: themeProvider.selectedTheme,
-            routerConfig: router,
-          );
-        },
-      ),
+    return Consumer<ThemeProvider>(
+      builder: (context, themeProvider, _) {
+        return MaterialApp.router(
+          debugShowCheckedModeBanner: false,
+          title: 'Expense Tracker',
+          theme: themeProvider.selectedTheme,
+          routerConfig: router,
+        );
+      },
     );
   }
 }
