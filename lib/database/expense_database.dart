@@ -1,4 +1,5 @@
 import 'package:expanse_tracker/models/expense_model.dart';
+import 'package:expanse_tracker/models/theme_model.dart';
 import 'package:flutter/material.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
@@ -151,4 +152,5 @@ class DatabaseHelper {
       return null;
     }
   }
+
 }

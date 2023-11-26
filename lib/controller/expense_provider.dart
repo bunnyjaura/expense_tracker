@@ -2,7 +2,7 @@ import 'dart:async';
 import 'package:expanse_tracker/controller/theme_provider.dart';
 import 'package:expanse_tracker/models/expense_model.dart';
 import 'package:expanse_tracker/router.dart';
-import 'package:expanse_tracker/view/utils/database.dart';
+import 'package:expanse_tracker/database/expense_database.dart';
 import 'package:expanse_tracker/view/utils/toast.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
