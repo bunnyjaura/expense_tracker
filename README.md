@@ -9,14 +9,14 @@ Introducing our Flutter-driven Expense Tracker, a fusion of elegance and functio
 Powered by provider for state management, go_router for navigation, flutter_hooks for widgets, syncfusion_flutter_charts for data visuals, sqflite for local data, and flutter_slidable for UI interaction, this app offers a seamless and dynamic user journey.
 
 
-<img width="494" alt="Screenshot 2023-11-25 at 9 12 33 PM" src="https://github.com/bunnyjaura/expense_tracker/assets/65805179/73e5a1ac-2f6e-464c-9411-a9d0849c0700">
+![Simulator Screenshot - iPhone 15 Pro Max - 2023-11-26 at 18 51 10](https://github.com/bunnyjaura/expense_tracker/assets/65805179/a7494dc6-c329-48b3-80d1-1bd047d7b194)
 
-<img width="494" alt="Screenshot 2023-11-25 at 9 12 42 PM" src="https://github.com/bunnyjaura/expense_tracker/assets/65805179/2891ae74-24ca-4d80-bac5-8b8af8ffb5a9">
+![Simulator Screenshot - iPhone 15 Pro Max - 2023-11-26 at 18 51 03](https://github.com/bunnyjaura/expense_tracker/assets/65805179/8bdf7b5e-840c-48e3-80ef-9e23495e6dad)
 
-<img width="494" alt="Screenshot 2023-11-25 at 9 13 21 PM" src="https://github.com/bunnyjaura/expense_tracker/assets/65805179/1d2ac56d-e982-453f-b9c0-300ba8e83fb9">
+![Simulator Screenshot - iPhone 15 Pro Max - 2023-11-26 at 18 51 52](https://github.com/bunnyjaura/expense_tracker/assets/65805179/d0281aa3-3e9b-4b7c-88bd-daf689f5fc27)
 
-<img width="494" alt="Screenshot 2023-11-25 at 9 13 28 PM" src="https://github.com/bunnyjaura/expense_tracker/assets/65805179/858a077b-4c57-48b5-9105-2a20b99599ac">
+![Simulator Screenshot - iPhone 15 Pro Max - 2023-11-26 at 18 51 59](https://github.com/bunnyjaura/expense_tracker/assets/65805179/21287f14-20cf-4dfd-a860-ffa443826001)
 
-<img width="494" alt="Screenshot 2023-11-25 at 9 13 12 PM" src="https://github.com/bunnyjaura/expense_tracker/assets/65805179/c849ecd3-248c-4010-97bd-d8b9c43d07c3">
+![Simulator Screenshot - iPhone 15 Pro Max - 2023-11-26 at 18 52 16](https://github.com/bunnyjaura/expense_tracker/assets/65805179/a1dad8bf-0ab4-427c-9395-bf14b192f825)
 
-<img width="494" alt="Screenshot 2023-11-25 at 9 13 04 PM" src="https://github.com/bunnyjaura/expense_tracker/assets/65805179/322935ec-50da-4161-8630-15aa01102fde">
+![Simulator Screenshot - iPhone 15 Pro Max - 2023-11-26 at 18 52 08](https://github.com/bunnyjaura/expense_tracker/assets/65805179/cee44947-9b5a-42d4-bbea-190e28b3464b)
