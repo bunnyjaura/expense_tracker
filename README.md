@@ -9,7 +9,7 @@ Introducing our Flutter-driven Expense Tracker, a fusion of elegance and functio
 Powered by provider for state management, go_router for navigation, flutter_hooks for widgets, syncfusion_flutter_charts for data visuals, sqflite for local data, and flutter_slidable for UI interaction, this app offers a seamless and dynamic user journey.
 
 
-<img src ="https://github.com/bunnyjaura/expense_tracker/assets/65805179/a7494dc6-c329-48b3-80d1-1bd047d7b194" height='200'>
+<img src ="https://github.com/bunnyjaura/expense_tracker/assets/65805179/a7494dc6-c329-48b3-80d1-1bd047d7b194" height='700'>
 
 ![Simulator Screenshot - iPhone 15 Pro Max - 2023-11-26 at 18 51 03](https://github.com/bunnyjaura/expense_tracker/assets/65805179/8bdf7b5e-840c-48e3-80ef-9e23495e6dad)
 
