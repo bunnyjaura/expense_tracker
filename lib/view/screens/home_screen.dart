@@ -216,7 +216,8 @@ class HomeScreen extends StatelessWidget {
                                               edit: () {
                                                 context.go(
                                                     '/home/editExpense',
-                                                    extra: {'edit': expense});
+                                                    extra: {'edit': expense});                                                
+                                                  
                                               },
                                               amount: expenses[idx].amount,
                                               category:
